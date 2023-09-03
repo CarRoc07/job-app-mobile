@@ -26,12 +26,14 @@ const styles = StyleSheet.create({
   },
   searchWrapper: {
     flex: 1,
-    backgroundColor: COLORS.white,
+    backgroundColor: '#DAD9DE',
     marginRight: SIZES.small,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: SIZES.medium,
     height: "100%",
+    borderWidth: 1,
+    borderColor: COLORS.gray2,
   },
   searchInput: {
     fontFamily: FONT.regular,

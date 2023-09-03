@@ -33,12 +33,12 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
             <TextInput
               style={styles.searchInput}
               placeholder="Search jobs ..."
-              value=""
-              onChange={() => {}}
+              value={searchTerm}
+              onChangeText={(text) => setSearchTerm(text)}
               />
           </View>
 
-          <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
+          <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
             <Image
               source={icons.search}
               style={styles.searchBtnImage}
